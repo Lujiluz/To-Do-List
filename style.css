@@ -1,0 +1,67 @@
+* {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  user-select: none;
+}
+.title {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.submitForm {
+  border: 1px solid black;
+  /* padding-left: 10px; */
+  max-width: 70%;
+  height: 80px;
+  padding-top: 13px;
+}
+
+.header {
+  border: 1px solid black;
+  margin-top: 3rem;
+  padding-top: 13px;
+  max-width: 70%;
+  height: 60px;
+}
+
+.submitField {
+  width: 35rem;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.submitBtn {
+  padding: 10px 15px;
+}
+.clearListBtn {
+  padding: 0.3rem;
+}
+.taskList {
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+  max-width: 70%;
+  min-height: 25rem;
+  text-align: left;
+}
+
+#filterList {
+  padding: 5px;
+  width: 15rem;
+  margin: 1rem 1rem;
+}
+ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.task {
+  outline: none;
+  padding: 0.5rem 0.6rem;
+  border: none;
+  min-width: 90%;
+}
