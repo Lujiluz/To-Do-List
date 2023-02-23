@@ -12,6 +12,12 @@ document.querySelector('.clearListBtn').addEventListener('click', (e) => {
   clearAll();
 });
 
+const filterList = document.getElementById('filterList');
+
+filterList.addEventListener('input', (e) => {
+  e.preventDefault();
+  filterTasks(filterList);
+});
 //add task function
 function addTask() {
   const task = document.querySelector('.submitField');
@@ -141,4 +147,22 @@ function clearAll() {
     localStorage.clear();
     document.querySelector('ul').innerHTML = '';
   }
+}
+
+// filter tasks
+function filterTasks(event) {
+  // get value from input
+  let text = event.value.toLowerCase();
+  // get tasks
+  const tasks = document.querySelectorAll('li');
+  // check each value
+  tasks.forEach((task) => {
+    let item = task.children[1];
+    if (item.value.toLowerCase().indexOf(text) != -1) {
+      task.style.display = 'block';
+    } else {
+      task.style.display = 'none';
+    }
+  });
+  // if value from input === task.
 }
