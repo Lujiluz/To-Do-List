@@ -13,6 +13,10 @@ body {
   font-weight: normal;
 }
 
+.del-icon {
+  background: url(./img/delete-16px.png);
+}
+
 .submitForm {
   border: 1px solid black;
   /* padding-left: 10px; */
@@ -64,4 +68,9 @@ ul {
   padding: 0.5rem 0.6rem;
   border: none;
   min-width: 90%;
+}
+
+.completed {
+  text-decoration: line-through;
+  cursor: default;
 }
