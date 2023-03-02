@@ -4,57 +4,98 @@
   padding: 0 auto;
   box-sizing: border-box;
 }
+p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
 body {
   text-align: center;
   user-select: none;
+  background-color: #ebebeb;
+}
+.container {
+  background-color: #fff;
+  max-width: 70%;
+  border-radius: 0.5%;
 }
 .title {
   font-size: 2rem;
   font-weight: normal;
 }
-
+.icon {
+  position: absolute;
+  left: 15rem;
+  top: 4.3rem;
+}
 .del-icon {
   background: url(./img/delete-16px.png);
 }
 
+.dark-mode {
+  position: absolute;
+  right: 15rem;
+  top: 4.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* border: 1px solid black; */
+  box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
 .submitForm {
-  border: 1px solid black;
-  /* padding-left: 10px; */
-  max-width: 70%;
+  padding-left: 10px;
   height: 80px;
   padding-top: 13px;
 }
 
 .header {
-  border: 1px solid black;
+  box-shadow: 0 4px 6px -6px #222;
+  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); */
   margin-top: 3rem;
-  padding-top: 13px;
-  max-width: 70%;
+  padding-bottom: 3.8rem;
+  padding-top: 1rem;
   height: 60px;
 }
 
 .submitField {
+  outline: none;
   width: 35rem;
   margin-right: 10px;
+  margin-top: 1.3rem;
   padding: 10px;
+  border: none;
+  box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn {
+  background-color: #fff;
+  border: none;
+  box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
   padding: 10px 15px;
+  cursor: pointer;
 }
 .clearListBtn {
-  padding: 0.3rem;
+  background-color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
 }
 .taskList {
-  border: 1px solid black;
+  box-shadow: 0 -4px 6px -6px #222;
   padding: 1rem 1.5rem;
-  max-width: 70%;
   min-height: 25rem;
   text-align: left;
+  margin-top: 2rem;
 }
 
 #filterList {
-  padding: 5px;
+  border: none;
+  box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 0.5rem;
   width: 15rem;
   margin: 1rem 1rem;
 }
@@ -66,8 +107,10 @@ ul {
 .task {
   outline: none;
   padding: 0.5rem 0.6rem;
+  margin-bottom: 0.8rem;
   border: none;
   min-width: 90%;
+  box-shadow: inset 0px -3px 2.5px -2.5px rgba(0, 0, 0, 0.2);
 }
 
 .completed {

@@ -12,18 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   </head>
   <body>
-    <div class="header">
-      <p class="title">To-do List</p>
+    <div class="container">
+      <div class="header">
+        <p class="title">To-do List</p>
+        <div class="dark-mode">
+          <img src="./img/Fa-Team-Fontawesome-FontAwesome-Moon.24.png" alt="dark-mode" width="24" height="24" />
+        </div>
+        <a class="icon" href="https://github.com/Lujiluz/To-Do-List"><img src="./img/Pictogrammers-Material-Github.48.png" alt="dark-mode" width="48" height="48" /></a>
+      </div>
+      <form class="submitForm">
+        <input type="text" class="submitField" placeholder="Add Task" />
+        <button class="submitBtn" type="button" onclick="addTask()">ADD</button>
+      </form>
+      <div class="taskList">
+        <input type="text" name="filterlist" id="filterList" placeholder="Search Task" />
+        <button class="clearListBtn">CLEAR</button>
+        <ul></ul>
+      </div>
     </div>
-    <form class="submitForm">
-      <input type="text" class="submitField" placeholder="Add Task" />
-      <button class="submitBtn" type="button" onclick="addTask()">ADD</button>
-    </form>
-    <div class="taskList">
-      <input type="text" name="filterlist" id="filterList" placeholder="Search Task" />
-      <button class="clearListBtn">CLEAR</button>
-      <ul></ul>
-    </div>
+    <p>© 2023. Luji. All right reserved.</p>
     <script src="script.js"></script>
   </body>
 </html>
