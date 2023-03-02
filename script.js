@@ -164,5 +164,4 @@ function filterTasks(event) {
       task.style.display = 'none';
     }
   });
-  // if value from input === task.
 }
