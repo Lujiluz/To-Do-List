@@ -15,14 +15,14 @@ body {
 }
 .container {
   background-color: #fff;
-  max-width: 70%;
+  width: 60em;
   border-radius: 0.5%;
 }
 .title {
   font-size: 2rem;
   font-weight: normal;
 }
-.icon {
+.github-icon {
   position: absolute;
   left: 15rem;
   top: 4.3rem;
@@ -31,7 +31,7 @@ body {
   background: url(./img/delete-16px.png);
 }
 
-.dark-mode {
+.dark-mode-btn {
   position: absolute;
   right: 15rem;
   top: 4.3rem;
@@ -91,7 +91,7 @@ body {
   margin-top: 2rem;
 }
 
-#filterList {
+.filterList {
   border: none;
   box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
   outline: none;
@@ -109,11 +109,129 @@ ul {
   padding: 0.5rem 0.6rem;
   margin-bottom: 0.8rem;
   border: none;
-  min-width: 90%;
+  width: 60em;
   box-shadow: inset 0px -3px 2.5px -2.5px rgba(0, 0, 0, 0.2);
 }
 
 .completed {
   text-decoration: line-through;
   cursor: default;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .container {
+    width: 60em;
+  }
+  .dark-mode-btn {
+    right: 10rem;
+  }
+  .github-icon {
+    left: 10rem;
+  }
+  .submitField {
+    width: 30rem;
+  }
+  .filterList {
+    width: 20rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1.3rem;
+  }
+  .task {
+    width: 65em;
+    font-size: 0.8em;
+  }
+  input[type='checkbox'] {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 50em;
+  }
+  .dark-mode-btn {
+    right: 5rem;
+  }
+  .github-icon {
+    left: 5rem;
+  }
+  .submitField {
+    width: 25rem;
+  }
+  .filterList {
+    width: 18rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1.3rem;
+  }
+  .task {
+    width: 55em;
+    font-size: 0.8em;
+  }
+  input[type='checkbox'] {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .container {
+    width: 43em;
+  }
+  .dark-mode-btn {
+    right: 3rem;
+  }
+  .github-icon {
+    left: 3rem;
+  }
+  .submitField {
+    width: 25rem;
+  }
+  .filterList {
+    width: 18rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1.3rem;
+  }
+  .task {
+    width: 45em;
+    font-size: 0.8em;
+  }
+  input[type='checkbox'] {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .container {
+    width: 23em;
+  }
+  .dark-mode-btn {
+    right: 5rem;
+  }
+  .github-icon {
+    left: 5rem;
+  }
+  .submitField {
+    width: 15rem;
+  }
+  .filterList {
+    width: 13rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1.3rem;
+  }
+  .task {
+    width: 20em;
+    font-size: 0.8em;
+  }
+  input[type='checkbox'] {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .dark-mode-btn {
+    right: 2rem;
+  }
+  .github-icon {
+    left: 2rem;
+  }
 }

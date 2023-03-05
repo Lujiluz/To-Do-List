@@ -12,7 +12,7 @@ document.querySelector('.clearListBtn').addEventListener('click', (e) => {
   clearAll();
 });
 
-const filterList = document.getElementById('filterList');
+const filterList = document.getElementsByClassName('filterList')[0];
 
 filterList.addEventListener('input', (e) => {
   e.preventDefault();

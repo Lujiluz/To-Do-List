@@ -15,17 +15,17 @@
     <div class="container">
       <div class="header">
         <p class="title">To-do List</p>
-        <div class="dark-mode">
+        <div class="dark-mode-btn">
           <img src="./img/Fa-Team-Fontawesome-FontAwesome-Moon.24.png" alt="dark-mode" width="24" height="24" />
         </div>
-        <a class="icon" href="https://github.com/Lujiluz/To-Do-List"><img src="./img/Pictogrammers-Material-Github.48.png" alt="dark-mode" width="48" height="48" /></a>
+        <a class="github-icon" href="https://github.com/Lujiluz/To-Do-List" target="_blank"><img src="./img/Pictogrammers-Material-Github.48.png" alt="dark-mode" width="48" height="48" /></a>
       </div>
       <form class="submitForm">
         <input type="text" class="submitField" placeholder="Add Task" />
         <button class="submitBtn" type="button" onclick="addTask()">ADD</button>
       </form>
       <div class="taskList">
-        <input type="text" name="filterlist" id="filterList" placeholder="Search Task" />
+        <input type="text" name="filterlist" class="filterList" placeholder="Search Task" />
         <button class="clearListBtn">CLEAR</button>
         <ul></ul>
       </div>
