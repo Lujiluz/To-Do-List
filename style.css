@@ -26,6 +26,12 @@ body {
   position: absolute;
   left: 15rem;
   top: 4.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+  padding: 0.3rem;
+  cursor: pointer;
 }
 .del-icon {
   background: url(./img/delete-16px.png);
@@ -37,7 +43,6 @@ body {
   top: 4.3rem;
   width: 2.5rem;
   height: 2.5rem;
-  /* border: 1px solid black; */
   box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10%;
   padding: 0.3rem;
