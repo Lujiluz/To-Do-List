@@ -33,9 +33,6 @@ body {
   padding: 0.3rem;
   cursor: pointer;
 }
-.del-icon {
-  background: url(./img/delete-16px.png);
-}
 
 .dark-mode-btn {
   position: absolute;
@@ -57,7 +54,6 @@ body {
 
 .header {
   box-shadow: 0 4px 6px -6px #222;
-  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); */
   margin-top: 3rem;
   padding-bottom: 3.8rem;
   padding-top: 1rem;

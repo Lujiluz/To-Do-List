@@ -12,6 +12,11 @@ document.querySelector('.clearListBtn').addEventListener('click', (e) => {
   clearAll();
 });
 
+document.querySelector('.dark-mode-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  darkMode();
+});
+
 const filterList = document.getElementsByClassName('filterList')[0];
 
 filterList.addEventListener('input', (e) => {
@@ -164,4 +169,10 @@ function filterTasks(event) {
       task.style.display = 'none';
     }
   });
+}
+
+// Switching to Dark Mode Function
+function darkMode() {
+  const darkModeBtn = document.querySelector('.dark-mode-btn');
+  console.log(darkModeBtn);
 }
