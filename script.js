@@ -173,6 +173,41 @@ function filterTasks(event) {
 
 // Switching to Dark Mode Function
 function darkMode() {
+  const body = document.body;
+  const container = document.querySelector('.container');
   const darkModeBtn = document.querySelector('.dark-mode-btn');
-  console.log(darkModeBtn);
+  const githubIcon = document.querySelector('.github-icon');
+  const submitField = document.querySelector('.submitField');
+  const submitBtn = document.querySelector('.submitBtn');
+  const filterList = document.querySelector('.filterList');
+  const clearListBtn = document.querySelector('.clearListBtn');
+  const tasks = document.querySelectorAll('.task');
+  let allElements = [container, darkModeBtn, githubIcon, submitField, submitBtn, filterList, clearListBtn];
+
+  // darkModeBtn
+  let appereanceValue = darkModeBtn.firstElementChild.getAttribute('src');
+
+  if (appereanceValue === './img/moon-24.png') {
+    darkModeBtn.firstElementChild.setAttribute('src', './img/sun-24.png');
+    // when button is darkModeBtn
+    body.classList.add('body-darkmode');
+    allElements.forEach((element) => {
+      element.classList.add(element.getAttribute('class') + '-darkmode');
+    });
+    // dark mode styling for tasks
+    tasks.forEach((task) => {
+      task.classList.add(task.classList[0] + '-darkmode');
+    });
+  } else {
+    // back to light mode
+    darkModeBtn.firstElementChild.setAttribute('src', './img/moon-24.png');
+    body.classList.remove('body-darkmode');
+    allElements.forEach((element) => {
+      element.classList.remove(element.classList[0] + '-darkmode');
+    });
+    // back to light mode styling for tasks
+    tasks.forEach((task) => {
+      task.classList.remove(task.classList[0] + '-darkmode');
+    });
+  }
 }
