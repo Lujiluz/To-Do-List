@@ -18,6 +18,7 @@ body {
   width: 60em;
   border-radius: 0.5%;
 }
+
 .title {
   font-size: 2rem;
   font-weight: normal;
@@ -67,12 +68,14 @@ body {
   margin-top: 1.3rem;
   padding: 10px;
   border: none;
+  border-radius: 5px;
   box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .submitBtn {
   background-color: #fff;
   border: none;
+  border-radius: 5px;
   box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
   padding: 10px 15px;
   cursor: pointer;
@@ -80,6 +83,7 @@ body {
 .clearListBtn {
   background-color: #fff;
   border: none;
+  border-radius: 5px;
   padding: 0.5rem;
   cursor: pointer;
   box-shadow: 1.5px 1.5px 2.5px 1px rgba(0, 0, 0, 0.2);
@@ -94,6 +98,7 @@ body {
 
 .filterList {
   border: none;
+  border-radius: 5px;
   box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
   outline: none;
   padding: 0.5rem;
@@ -110,6 +115,7 @@ ul {
   padding: 0.5rem 0.6rem;
   margin-bottom: 0.8rem;
   border: none;
+  border-radius: 5px;
   width: 60em;
   box-shadow: inset 0px -3px 2.5px -2.5px rgba(0, 0, 0, 0.2);
 }
@@ -119,6 +125,56 @@ ul {
   cursor: default;
 }
 
+/* Dark Mode Styling */
+.body-darkmode {
+  background-color: #303030;
+  color: #d4d4d4;
+}
+
+.container-darkmode {
+  background-color: #303030;
+  box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.github-icon-darkmode,
+.dark-mode-btn-darkmode,
+.submitBtn-darkmode,
+.clearListBtn-darkmode {
+  background-color: #d4d4d4;
+}
+
+.submitField-darkmode {
+  background-color: #d4d4d4;
+  box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.filterList-darkmode {
+  background-color: #d4d4d4;
+  box-shadow: inset 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.task-darkmode {
+  background-color: #303030;
+  color: #d4d4d4;
+  box-shadow: inset 0px -4px 2.5px -2.5px rgba(0, 0, 0, 0.2);
+}
+
+/* placeholder color */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
 /* Media queries */
 @media (max-width: 1200px) {
   .container {
